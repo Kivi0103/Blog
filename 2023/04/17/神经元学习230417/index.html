@@ -6,16 +6,16 @@
   
   <title>神经元学习230417 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="什么是神经元？ 激活函数选择sigmoid函数和tanh函数 sigmoid函数表达式  什么是神经网络？ 神经网络其实就是按照一定规则连接起来的多个神经元。有输入层，隐含层，输出层。神经网络实际上就是一个输入向量 到输出向量 的函数 隐含层中每个神经元都有一个权重向量，向量维度对应于前一层输入的个数+1 同一层的神经元的权重向量组成权重矩阵 超参数是什么？ 一个神经网络的连接方式、网络的层数、每">
+  <meta name="description" content="什么是神经元？激活函数选择sigmoid函数和tanh函数 sigmoid函数表达式  什么是神经网络？神经网络其实就是按照一定规则连接起来的多个神经元。有输入层，隐含层，输出层。神经网络实际上就是一个输入向量 到输出向量 的函数 隐含层中每个神经元都有一个权重向量，向量维度对应于前一层输入的个数+1 同一层的神经元的权重向量组成权重矩阵 超参数是什么？一个神经网络的连接方式、网络的层数、每层的节">
 <meta property="og:type" content="article">
 <meta property="og:title" content="神经元学习230417">
 <meta property="og:url" content="http://example.com/2023/04/17/%E7%A5%9E%E7%BB%8F%E5%85%83%E5%AD%A6%E4%B9%A0230417/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="什么是神经元？ 激活函数选择sigmoid函数和tanh函数 sigmoid函数表达式  什么是神经网络？ 神经网络其实就是按照一定规则连接起来的多个神经元。有输入层，隐含层，输出层。神经网络实际上就是一个输入向量 到输出向量 的函数 隐含层中每个神经元都有一个权重向量，向量维度对应于前一层输入的个数+1 同一层的神经元的权重向量组成权重矩阵 超参数是什么？ 一个神经网络的连接方式、网络的层数、每">
+<meta property="og:description" content="什么是神经元？激活函数选择sigmoid函数和tanh函数 sigmoid函数表达式  什么是神经网络？神经网络其实就是按照一定规则连接起来的多个神经元。有输入层，隐含层，输出层。神经网络实际上就是一个输入向量 到输出向量 的函数 隐含层中每个神经元都有一个权重向量，向量维度对应于前一层输入的个数+1 同一层的神经元的权重向量组成权重矩阵 超参数是什么？一个神经网络的连接方式、网络的层数、每层的节">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/%E7%A5%9E%E7%BB%8F%E5%85%83%E5%AD%A6%E4%B9%A0230417/Snipaste_2023-04-17_21-06-06.png">
 <meta property="article:published_time" content="2023-04-17T13:03:07.000Z">
-<meta property="article:modified_time" content="2023-04-17T15:34:40.470Z">
+<meta property="article:modified_time" content="2023-04-17T15:37:55.521Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/%E7%A5%9E%E7%BB%8F%E5%85%83%E5%AD%A6%E4%B9%A0230417/Snipaste_2023-04-17_21-06-06.png">
@@ -97,23 +97,18 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>什么是神经元？</p>
-<p>激活函数选择sigmoid函数和tanh函数</p>
+        <h3 id="什么是神经元？"><a href="#什么是神经元？" class="headerlink" title="什么是神经元？"></a>什么是神经元？</h3><p>激活函数选择sigmoid函数和tanh函数</p>
 <p>sigmoid函数表达式</p>
 <p><img src="/%E7%A5%9E%E7%BB%8F%E5%85%83%E5%AD%A6%E4%B9%A0230417/Snipaste_2023-04-17_21-06-06.png" alt="Snipaste_2023-04-17_21-06-06"></p>
-<p>什么是神经网络？</p>
-<p>神经网络其实就是按照一定规则连接起来的多个神经元。有输入层，隐含层，输出层。神经网络实际上就是一个输入向量 到输出向量 的函数</p>
+<h3 id="什么是神经网络？"><a href="#什么是神经网络？" class="headerlink" title="什么是神经网络？"></a>什么是神经网络？</h3><p>神经网络其实就是按照一定规则连接起来的多个神经元。有输入层，隐含层，输出层。神经网络实际上就是一个输入向量 到输出向量 的函数</p>
 <p>隐含层中每个神经元都有一个权重向量，向量维度对应于前一层输入的个数+1</p>
 <p>同一层的神经元的权重向量组成权重矩阵</p>
-<p>超参数是什么？</p>
-<p>一个神经网络的连接方式、网络的层数、每层的节点数这些需要人为设置的参数称为超参数</p>
-<p>什么是反向传播算法？</p>
-<p>计算一个节点的误差项，需要先计算每个与其相连的下一层节点的误差</p>
+<h3 id="超参数是什么？"><a href="#超参数是什么？" class="headerlink" title="超参数是什么？"></a>超参数是什么？</h3><p>一个神经网络的连接方式、网络的层数、每层的节点数这些需要人为设置的参数称为超参数</p>
+<h3 id="什么是反向传播算法？"><a href="#什么是反向传播算法？" class="headerlink" title="什么是反向传播算法？"></a>什么是反向传播算法？</h3><p>计算一个节点的误差项，需要先计算每个与其相连的下一层节点的误差</p>
 <p>项。这就要求误差项的计算顺序必须是从输出层开始，然后反向依次计算每个隐藏层的误差项，直到与输入层相连的那个隐藏层。这就是反向传</p>
 <p>播算法的名字的含义。</p>
 <p>用于求损失函数对w和b的偏微分，用于梯度下降算法</p>
-<p>神经网络代码：</p>
-<p>分解为5个对象</p>
+<h3 id="神经网络代码："><a href="#神经网络代码：" class="headerlink" title="神经网络代码："></a>神经网络代码：</h3><p>分解为5个对象</p>
 <ul>
 <li>Network 神经网络对象，提供API接口。它由若干层对象组成以及连接对象组成。</li>
 <li>Layer 层对象，由多个节点组成。</li>
