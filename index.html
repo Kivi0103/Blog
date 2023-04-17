@@ -71,6 +71,68 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-神经元学习230417" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/04/17/%E7%A5%9E%E7%BB%8F%E5%85%83%E5%AD%A6%E4%B9%A0230417/" class="article-date">
+  <time class="dt-published" datetime="2023-04-17T13:03:07.000Z" itemprop="datePublished">2023-04-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/04/17/%E7%A5%9E%E7%BB%8F%E5%85%83%E5%AD%A6%E4%B9%A0230417/">神经元学习230417</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>什么是神经元？</p>
+<p>激活函数选择sigmoid函数和tanh函数</p>
+<p>sigmoid函数表达式</p>
+<p><img src="/%E7%A5%9E%E7%BB%8F%E5%85%83%E5%AD%A6%E4%B9%A0230417/Snipaste_2023-04-17_21-06-06.png" alt="Snipaste_2023-04-17_21-06-06"></p>
+<p>什么是神经网络？</p>
+<p>神经网络其实就是按照一定规则连接起来的多个神经元。有输入层，隐含层，输出层。神经网络实际上就是一个输入向量 到输出向量 的函数</p>
+<p>隐含层中每个神经元都有一个权重向量，向量维度对应于前一层输入的个数+1</p>
+<p>同一层的神经元的权重向量组成权重矩阵</p>
+<p>超参数是什么？</p>
+<p>一个神经网络的连接方式、网络的层数、每层的节点数这些需要人为设置的参数称为超参数</p>
+<p>什么是反向传播算法？</p>
+<p>计算一个节点的误差项，需要先计算每个与其相连的下一层节点的误差</p>
+<p>项。这就要求误差项的计算顺序必须是从输出层开始，然后反向依次计算每个隐藏层的误差项，直到与输入层相连的那个隐藏层。这就是反向传</p>
+<p>播算法的名字的含义。</p>
+<p>用于求损失函数对w和b的偏微分，用于梯度下降算法</p>
+<p>神经网络代码：</p>
+<p>分解为5个对象</p>
+<ul>
+<li>Network 神经网络对象，提供API接口。它由若干层对象组成以及连接对象组成。</li>
+<li>Layer 层对象，由多个节点组成。</li>
+<li>Node 节点对象计算和记录节点自身的信息(比如输出值 、误差项 等，以及与这个节点相关的上下游的连接。</li>
+<li>Connection 每个连接对象都要记录该连接的权重。</li>
+<li>Connections 仅仅作为Connection的集合对象，提供一些集合操作。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/04/17/%E7%A5%9E%E7%BB%8F%E5%85%83%E5%AD%A6%E4%B9%A0230417/" data-id="clgkzywru0003a0tha4cl3rew" data-title="神经元学习230417" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-线性单元学习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/04/16/%E7%BA%BF%E6%80%A7%E5%8D%95%E5%85%83%E5%AD%A6%E4%B9%A0/" class="article-date">
@@ -117,7 +179,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/16/%E7%BA%BF%E6%80%A7%E5%8D%95%E5%85%83%E5%AD%A6%E4%B9%A0/" data-id="clgjmqxot00004cth4o3wbcd3" data-title="线性单元学习" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/04/16/%E7%BA%BF%E6%80%A7%E5%8D%95%E5%85%83%E5%AD%A6%E4%B9%A0/" data-id="clgkzywry0004a0thdapi2uzh" data-title="线性单元学习" class="article-share-link">Share</a>
       
       
       
@@ -165,7 +227,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/16/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2230415/" data-id="clgjmp7f50001vctha7aa99a5" data-title="个人博客230415" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/04/16/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2230415/" data-id="clgkzywrm0001a0th7wxh3wyx" data-title="个人博客230415" class="article-share-link">Share</a>
       
       
       
@@ -217,7 +279,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/16/%E6%84%9F%E7%9F%A5%E5%99%A8%E5%AD%A6%E4%B9%A0230409/" data-id="clgjmp7fa0003vcthf27s7z15" data-title="感知器学习230409" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/04/16/%E6%84%9F%E7%9F%A5%E5%99%A8%E5%AD%A6%E4%B9%A0230409/" data-id="clgkzywrr0002a0thde5od9xv" data-title="感知器学习230409" class="article-share-link">Share</a>
       
       
       
@@ -349,7 +411,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/16/Git%E5%AD%A6%E4%B9%A0230408/" data-id="clgjmp7f90002vcth7s5l7xvn" data-title="Git学习230408" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/04/16/Git%E5%AD%A6%E4%B9%A0230408/" data-id="clgkzywr90000a0th0ncp03wf" data-title="Git学习230408" class="article-share-link">Share</a>
       
       
       
@@ -390,6 +452,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/04/17/%E7%A5%9E%E7%BB%8F%E5%85%83%E5%AD%A6%E4%B9%A0230417/">神经元学习230417</a>
+          </li>
         
           <li>
             <a href="/2023/04/16/%E7%BA%BF%E6%80%A7%E5%8D%95%E5%85%83%E5%AD%A6%E4%B9%A0/">线性单元学习</a>
